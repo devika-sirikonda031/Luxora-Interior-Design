@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Kitchen Interiors</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Source/LUXORA.png" alt="Luxora Logo" height="65" width="75">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="../index.html">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex mx-auto search-container" onsubmit="return searchPage()">
+                    <input id="searchBox" class="form-control search-input" type="text" placeholder="Search...">
+                    <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./Project.html"><i class="bi bi-grid"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact.html"><i class="bi bi-telephone-fill"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container text-center pt-5 mt-5">
+        <p>Home > Kitchens > Modern Style</p>
+        <h2 class="fw-bold text-secondary">Modern Kitchen Interiors</h2>
+        <p class="text-muted">Beautiful and premium kitchen designs for a stylish home.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container mt-4 mb-5">
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/50/68/9a/50689a982f303580d5e5c02a7a2af491.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/54/3c/24/543c2484673ac938b44ea7122076ba2b.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/3b/2c/91/3b2c91b44d240fd33ea27ee41e62abc9.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/19/54/8d/19548daf1f5cd0213b7e7a902d284900.jpg"></div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/8e/8f/a9/8e8fa95e14e9b2786c233791a699a281.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/7d/6d/d9/7d6dd9a153d4bca204d1211685c7ce12.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/80/30/8d/80308d9b1e32c3aabc9407e712a52738.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/e0/2b/bb/e02bbb091f35b3a30c17b2952079a2cd.jpg"></div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/74/e8/ad/74e8add74df02fd129a3a65ba767fc62.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/05/d1/77/05d17772ecb1d44920b5ca844e69a68d.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/f5/5d/10/f55d101c87e0c811c9412df4c76aa5d2.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/f1/e9/28/f1e9281eefcb06474797db8ca21f3616.jpg"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="lux-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-section">
+                    <img src="../Source/LUXORA.png" class="footer-logo" alt="Luxora Logo">
+                    <p class="footer-desc">Elevating Homes with Elegant Interiors</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Extra_Files/Project.html">Projects</a></li>
+                        <li><a href="../index.html#Reviews">Reviews</a></li>
+                        <li><a href="../Extra_Files/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Contact</h5>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ luxorainteriors@gmail.com</p>
+                    <p>📍 Hyderabad, Telangana</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <a href="https://www.instagram.com" target="_blank" class="footer-social">
+                        <i class="bi bi-instagram"></i><span>Instagram</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">© 2025 Luxora Interiors — All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>

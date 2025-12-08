@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style1.css">
+
+</head>
+
+<body>
+  <!-- Navbar (Updated) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./Source/LUXORA.png" alt="Luxora Interiors Logo" height="65" width="75px">
+      </a>
+
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+        <!-- Left Items -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="./index.html">Home</a>
+          </li>
+        </ul>
+        <div class="nav-item">
+          <a class="nav-link text-light" href="./Extra_Files/kids.html">
+            Kdreams
+          </a>
+        </div>
+
+
+        <!-- RIGHT SIDE Search Bar -->
+
+
+        <form class="d-flex ms-auto search-container" onsubmit="return searchPage()">
+          <input id="searchBox" class="form-control search-input" type="text" placeholder="Search..."
+            aria-label="Search">
+          <button class="btn btn-outline-success ms-2 px-3" type="submit">Search</button>
+        </form>
+
+        <div class="nav-item">
+          <a class="nav-link text-light" href="./Extra_Files/Project.html">
+            <i class="bi bi-grid"></i> Projects
+          </a>
+        </div>
+
+
+        <div class="nav-item">
+          <a class="nav-link text-light" href="./Extra_Files/contact.html">
+            <i class="bi bi-telephone-fill"></i> Contact
+          </a>
+        </div>
+        <!-- <button id="themeToggle" class="btn btn-sm mode-btn"> -->
+    <!-- 🌙 Dark Mode -->
+<!-- </button> -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+    <i class="bi bi-moon-fill" id="themeIcon"></i>
+</button>
+
+
+      </div>
+
+
+    </div>
+  </nav> -
+
+
+
+
+
+
+  <!-- space below navbar -->
+  <br><br><br><br>
+
+
+  <!-- carousel section -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5627ec30e4b0dc30fe462054/1654892246664-C6V40POCJ6FESLYX1EDE/1_jhid-cohen-469x.jpg?format=1500w"
+          class="d-block w-100" style="height: 600px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5 class="fs-3">Modern Living Room</h5>
+          <p>Elegant and cozy design with premium seating and warm lighting.</p>
+          <a href="./Extra_Files/modern.html" class="btn btn-dark btn-sm">View More</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5627ec30e4b0dc30fe462054/1587598583512-0SN6ZIGF6YP9U1XDHITB/03_JHID_Albemarle+Terrace.jpg?format=1500w"
+          class="d-block w-100" style="height: 600px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5 class="fs-3">Elegant Dining Room</h5>
+          <p>A sophisticated dining space with natural lighting and premium décor.</p>
+          <a href="./Extra_Files/Dcozy.html" class="btn btn-dark btn-sm">View More</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/5627ec30e4b0dc30fe462054/1707936448692-720GDW8BG7L2BDCUGPHZ/06+-+Family+Room.jpg?format=1500w"
+          class="d-block w-100" style="height: 600px; object-fit:cover;">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5 class="fs-3">Rustic Living Room</h5>
+          <p>Warm wooden textures and brick accents for a cozy, countryside charm.</p>
+          <a href="./Extra_Files/Rustic.html " class="btn btn-dark btn-sm">View More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Correct placement for controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+  <!-- About Us Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold text-secondary">About Luxora Interiors</h2>
+        <p class="mt-3">
+          At Luxora Interiors, we create beautiful and functional spaces that
+          reflect your unique personality and lifestyle. Our experienced team of
+          designers ensures premium quality, stylish design,
+          and timely delivery for your dream home.
+        </p>
+        <p>We focus on modern interiors, budget-friendly solutions, and customer satisfaction.</p>
+        <a href="./Extra_Files/Project.html" class="btn btn-dark btn-sm">Learn More</a>
+      </div>
+
+      <div class="col-md-6">
+        <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg" class="img-fluid rounded"
+          alt="Modern Interior Design">
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Living Room Interiors Section -->
+  <h3 class="text-dark fw-bold my-4 text-center">
+
+    <i class="fas fa-couch"></i>Living Room Interiors
+  </h3>
+  <p class="text-center text-muted mb-4">Comfortable and stylish living spaces designed for relaxation.</p>
+
+  <div class="container text-center mb-5">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/d2/94/77/d2947784ccc93154573a4ea919dbc366.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Modern living Room </h5>
+            <p>Beautiful and cozy Living area.</p>
+            <a href="./Extra_Files/modern.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/5f/36/eb/5f36eb312465cc765f7be1ebdeacd4e9.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Cozy Living Room</h5>
+            <p>Relaxing space with natural light.</p>
+            <a href="./Extra_Files/Lclozy.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/65/8e/fc/658efcb897ed3c10ea5bb22e02cddb01.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Minimal Living Room</h5>
+            <p>Elegant neutral interior with soft tones.</p>
+            <a href="./Extra_Files/Lminimal.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/7c/4b/01/7c4b0178abee549291869dedcd2c102f.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Luxury Living Space</h5>
+            <p>Bright interiors with premium décor.</p>
+            <a href="./Extra_Files/Lluxury.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Kitchen & Dining Interiors Section -->
+  <h3 class="text-light fw-bold my-4 text-center">
+    Kitchen & Dining Interiors
+  </h3>
+  <p class="text-center text-muted mb-4">
+    Smart modular kitchens and elegant dining setups for modern living.
+  </p>
+
+  <div class="container text-center mb-5">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/61/1c/2a/611c2ad237e9e0d47a1ace1559dd5e46.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-light">Kitchen Design</h5>
+            <p>Modern modular kitchen setup.</p>
+            <a href="./Extra_Files/kitchen.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/6d/3f/64/6d3f647c9ae1dfee2874eb0723d7bbe5.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-light">White Modular Kitchen</h5>
+            <p>Glossy finish for sleek style.</p>
+            <a href="./Extra_Files/WKmodular.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/b0/0d/8b/b00d8bef45550c2ac16a11ca7915da92.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-light">Modern Kitchen</h5>
+            <p>Premium cabinetry with storage.</p>
+            <a href="./Extra_Files/KModern.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card">
+          <img
+            src="https://www.wedezinestudio.com/blogs/wp-content/uploads/2025/07/469725125_1095381492283067_8943134442205669274_n.webp"
+            class="card-img-top" style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Cozy Dining Corner</h5>
+            <p>Stylish breakfast seating area.</p>
+            <a href="./Extra_Files/Dcozy.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Bedroom Interiors Section -->
+  <h3 class="text-secondary fw-bold my-4 text-center">
+    Bedroom Interiors
+  </h3>
+  <p class="text-center text-muted mb-4">
+    Beautiful bedroom designs that ensure peaceful sleep and relaxation.
+  </p>
+
+  <div class="container text-center mb-5">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/fa/e8/71/fae87126281a06519c0282caee3cbf90.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Minimalist Bedroom</h5>
+            <p>Soft lighting for peaceful sleep.</p>
+            <a href="./Extra_Files/Bminimal.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://centuryply.com/blogimage/bedroom_1.png" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Luxury Bedroom</h5>
+            <p>Calming interiors and rich textures.</p>
+            <a href="./Extra_Files/Lbedroom.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/a3/6e/17/a36e17193569de532d4494079190c7f6.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Bedroom Makeover</h5>
+            <p>Perfect lighting for cozy nights.</p>
+            <a href="./Extra_Files/Bmakeover.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Trending Styles Section -->
+  <h3 class="text-secondary fw-bold my-4 text-center">
+    Trending Interior Styles
+  </h3>
+  <p class="text-center text-muted mb-4">
+    Latest design trends with stylish and unique interiors for every home.
+  </p>
+
+  <div class="container text-center mb-5">
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/10/79/eb/1079eb7d7bda4670a6904b640a0c1d2e.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Rustic Interior</h5>
+            <p>Warm wooden textures & brick charm.</p>
+            <a href="./Extra_Files/Project.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/85/64/bb/8564bb51540fdbcdd4f40c8bcd3e4147.jpg" class="card-img-top"
+            style="height:350px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="text-secondary">Elegant Décor</h5>
+            <p>Premium styling with luxury appeal.</p>
+            <a href="./Extra_Files/Elegant.html" class="btn btn-dark btn-sm rounded-pill">View More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Pricing Table Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Our Pricing Packages</h2>
+
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Package</th>
+          <th scope="col">Features</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-light">
+          <td>Basic Interior</td>
+          <td>Modular Kitchen + TV Unit + False Ceiling (Living Room)</td>
+          <td>₹1,50,000</td>
+        </tr>
+        <tr class="table-warning fw-bold">
+          <td>Premium Interior</td>
+          <td>Full Home Décor + Lighting + Storage Furniture</td>
+          <td>₹3,50,000</td>
+        </tr>
+        <tr class="table-success">
+          <td>Luxury Interior</td>
+          <td>Complete Home Makeover + Custom Designs + Smart Lighting</td>
+          <td>₹7,50,000</td>
+        </tr>
+        <tr class="table-light">
+          <td>Modular Kitchen Package</td>
+          <td>Advanced Storage + High-Quality Materials + Chimney</td>
+          <td>₹1,20,000</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>Bedroom Makeover</td>
+          <td>Wardrobe + Dressing Unit + Soft Lighting + Bed Décor</td>
+          <td>₹95,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center text-muted mb-4">
+      Have a project in mind? We’d love to design your dream home!
+    </p>
+
+    <form class="row g-3 justify-content-center">
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-5">
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="col-md-10">
+        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+      </div>
+      <div class="col-md-10 text-center">
+        <button class="btn btn-success px-4" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- Review Section -->
+  <div class="container my-5" id="Reviews">
+    <h2 class="text-center mb-5">What Our Clients Say</h2>
+    <p class="text-center text-muted mb-4">
+      Our clients love the premium quality and timely delivery of our work.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Review Card 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card shadow-lg p-4 text-center">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mx-auto d-block" width="80"
+            height="80" alt="Client">
+          <p class="mt-3">"Amazing interior designs! My living room now looks like a luxury suite!"</p>
+          <h6 class="fw-bold">Aishwarya K.</h6>
+          <div class="text-warning fs-5">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card shadow-lg p-4 text-center">
+          <img src="https://randomuser.me/api/portraits/men/22.jpg" class="rounded-circle mx-auto d-block" width="80"
+            height="80" alt="Client">
+          <p class="mt-3">"Fast delivery and great quality work. Highly professional!"</p>
+          <h6 class="fw-bold">Nikhil R.</h6>
+          <div class="text-warning fs-5">★★★★☆</div>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card shadow-lg p-4 text-center">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle mx-auto d-block" width="80"
+            height="80" alt="Client">
+          <p class="mt-3">"Loved the kitchen makeover! Very satisfied with the output."</p>
+          <h6 class="fw-bold">Preethi D.</h6>
+          <div class="text-warning fs-5">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="lux-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand + Tagline -->
+        <div class="footer-section">
+          <img src="./Source/LUXORA.png" class="footer-logo" alt="Luxora Logo">
+          <p class="footer-desc">Elevating Homes with Elegant Interiors</p>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-section">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Extra_Files/Project.html">Projects</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+            <li><a href="./Extra_Files/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+          <h5 class="footer-title">Contact</h5>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️ luxorainteriors@gmail.com</p>
+          <p>📍 Hyderabad, Telangana</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-section">
+          <h5 class="footer-title">Follow Us</h5>
+          <a href="https://www.instagram.com" target="_blank" class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+      <p class="text-center footer-copy">© 2025 Luxora Interiors — All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

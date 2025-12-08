@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxora Interiors – Projects</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../Project.css">
+
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4">
+      <!-- <a class="navbar-brand" href="../index.html">Luxora Interiors</a> -->
+      <a class="navbar-brand" href="index.html">
+        <img src="../Source/LUXORA.png" alt="Luxora Interiors Logo" height="65" width="75px">
+      </a>
+      <a class="navbar-brand" href="../index.html">Luxora Interiors</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">
+              <i class="bi bi-telephone-fill"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 hero-text">
+          <span class="tagline-pill">Real homes. Real transformations.</span>
+          <h1>Projects by Luxora Interiors</h1>
+          <p class="lead">
+            From empty corners to elegant spaces – explore our living, dining,
+            bedroom and kitchen makeovers designed for modern Indian homes.
+          </p>
+          <button class="btn btn-lux mt-2">
+            Book a Free Design Call
+          </button>
+        </div>
+
+        <div class="col-md-6">
+          <div class="hero-image-wrapper">
+            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Luxora interior hero" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY TABS -->
+  <section class="category-tabs">
+    <div class="container text-center">
+      <button class="btn btn-cat active" data-room="living">Living Room</button>
+      <button class="btn btn-cat" data-room="dining">Dining Room</button>
+      <button class="btn btn-cat" data-room="bedroom">Bedroom</button>
+      <button class="btn btn-cat" data-room="kitchen">Kitchen</button>
+      <button class="btn btn-cat" data-room="decor">Décor</button>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER SECTION -->
+  <section class="ba-section">
+    <div class="container">
+      <h2 class="ba-title">Real Transformation by Luxora</h2>
+      <p class="ba-subtitle">
+        Drag the slider to see how Luxora turns a simple room into a warm, modern space.
+      </p>
+
+      <div class="ba-wrapper">
+        <div class="ba-container" id="baContainer">
+          <!-- BEFORE -->
+          <img id="baBefore" src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg" alt="Before" />
+
+          <!-- AFTER OVERLAY -->
+          <div id="baOverlay">
+            <img id="baAfter" src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="After" />
+          </div>
+
+          <!-- HANDLE -->
+          <div id="baHandle">
+            <div class="handle-circle">DRAG</div>
+          </div>
+
+          <!-- LABELS -->
+          <div class="ba-label before">Before</div>
+          <div class="ba-label after">After</div>
+        </div>
+      </div>
+
+      <!-- Small project text -->
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="project-mini-card">
+            <h6 id="miniTitle1">Veronica’s Living Room</h6>
+            <span id="miniText1">Muted beige palette, smart storage and warm lighting.</span>
+          </div>
+          <div class="project-mini-card">
+            <h6 id="miniTitle2">Laura’s Cozy Corner</h6>
+            <span id="miniText2">Reading chair, floor lamp and art wall styling.</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p style="color:#7b6e62;">
+            Every Luxora project is planned with function first – we study your lifestyle, natural light, storage needs
+            and budget. Then our designers create detailed 3D layouts, share material options and supervise the complete
+            execution until handover.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="pricing-area">
+    <div class="container">
+      <h2>Plans Designed For Every Home</h2>
+      <p class="sub">
+        Transparent pricing with complete design support. Materials and scope can be customized for your city and
+        budget.
+      </p>
+
+      <div class="row g-4">
+        <!-- Basic -->
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <div class="plan-name">Essential</div>
+            <div class="price">₹1,50,000</div>
+            <div class="per">Ideal for 1BHK / starter homes</div>
+            <ul>
+              <li>Modular kitchen base units</li>
+              <li>One TV unit or wardrobe</li>
+              <li>Paint & basic lighting plan</li>
+            </ul>
+            <button class="btn btn-lux px-4" href="./contact.html">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <span class="badge-popular">Most booked</span>
+            <div class="plan-name">Premium</div>
+            <div class="price">₹3,50,000</div>
+            <div class="per">2–3BHK complete makeover</div>
+            <ul>
+              <li>Full home modular storage</li>
+              <li>Accent walls & layered lighting</li>
+              <li>Furniture & décor styling</li>
+            </ul>
+            <button class="btn btn-lux px-4 " href="./contact.html">Book Visit</button>
+          </div>
+        </div>
+
+        <!-- Luxury -->
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <div class="plan-name">Luxury Smart Interiors</div>
+            <div class="price">₹7,50,000</div>
+            <div class="per">High-end finishes & automation</div>
+            <ul>
+              <li>Bespoke furniture & finishes</li>
+              <li>Smart mood lighting & controls</li>
+              <li>Styling for every room</li>
+            </ul>
+            <div  href="./contact.html">
+            <button class="btn btn-lux px-4">Contact Stylist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-center">
+        <p style="color:#7b6e62; margin-bottom:8px;">
+          🎁 Launch offer: Free 3D design worth ₹25,000 for the first 20 project bookings.
+        </p>
+        <button class="btn btn-lux px-5" href="../index.html">Get Started with Luxora</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="lux-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand + Tagline -->
+        <div class="footer-section">
+          <img src="../Source/LUXORA.png" class="footer-logo" alt="Luxora Logo">
+          <p class="footer-desc">Elevating Homes with Elegant Interiors</p>
+        </div>
+
+        <!-- Explore Links -->
+        <div class="footer-section">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Extra_Files/Project.html">Projects</a></li>
+            <li><a href="../index.html#Reviews">Reviews</a></li>
+            <li><a href="../Extra_Files/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <h5 class="footer-title">Contact</h5>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️ luxorainteriors@gmail.com</p>
+          <p>📍 Hyderabad, Telangana</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-section">
+          <h5 class="footer-title">Follow Us</h5>
+          <a href="https://www.instagram.com" target="_blank" class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+      <p class="footer-copy text-center">© 2025 Luxora Interiors — All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- your external JS -->
+  <script src="../app.js"></script>
+</body>
+
+</html>

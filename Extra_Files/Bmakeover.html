@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BedMakeover Interiors | Luxora Interiors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+
+    /* Search Bar Expand Animation */
+    .search-container {
+      flex-grow: 1;
+      justify-content: center;
+      /* border-radius: 15px; */
+    }
+
+    .search-input {
+      width: 230px;
+      max-width: 350px;
+      transition: width 0.4s ease-in-out;
+      border-radius: 15px;
+    }
+
+    .search-input:focus {
+      width: 550px;
+      max-width: 650px;
+    }
+
+    .navbar-brand {
+      margin-right: 20px;
+    }
+
+    .nav-link {
+      font-size: 18px;
+      margin-right: 20px;
+    }
+
+    /* Card Styling */
+    .gallery-card {
+      border: none;
+      overflow: hidden;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .gallery-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+    }
+
+    .row {
+      --bs-gutter-x: 2rem !important;
+      --bs-gutter-y: 2rem !important;
+    }
+
+
+    /* Footer Layout */
+    .lux-footer {
+      background: #0c0c0c;
+      color: #eaeaea;
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 60px;
+    }
+
+    .footer-section {
+      min-height: 160px;
+    }
+
+    .footer-title {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .footer-section p,
+    .footer-links a {
+      font-size: 15px;
+      margin: 4px 0;
+      color: #dcdcdc;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #f5c542;
+      padding-left: 4px;
+    }
+
+    .footer-logo {
+      width: 130px;
+      margin-bottom: 12px;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #eaeaea;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-social i {
+      font-size: 26px;
+      color: #f5c542;
+    }
+
+    .footer-social:hover {
+      color: #f5c542;
+      padding-left: 4px;
+    }
+
+    .footer-divider {
+      border-top: 1px solid #383838;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+
+    .footer-copy {
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (Updated) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold fs-3 text-secondary" href="#">Luxora Interiors</a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+        <!-- Left Items -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="../index.html">Home</a>
+          </li>
+
+        </ul>
+
+        <!-- RIGHT SIDE Search Bar -->
+        <form class="d-flex mx-auto search-container" onsubmit="return searchPage()">
+          <input id="searchBox" class="form-control search-input" type="text" placeholder="Search...">
+          <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+        </form>
+
+
+        <div class="nav-item">
+          <a class="nav-link text-light" href="./Project.html">
+            <i class="bi bi-grid"></i> Projects
+          </a>
+        </div>
+
+
+        <div class="nav-item">
+          <div class="nav-item">
+            <a class="nav-link text-light" href="./contact.html">
+              <i class="bi bi-telephone-fill"></i> Contact
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Title -->
+  <center>
+    <div class="container heading">
+      <p>Home > Living Rooms > Makeover</p>
+      <h2 class="text-center fw-bold text-secondary mb-3">BedMakeover Interiors</h2>
+      <p class="text-center text-muted mb-5">Stylish and luxurious bedroom decor inspiration</p>
+    </div>
+  </center>
+  <br>
+
+  <!-- Gallery -->
+  <div class="container mb-5">
+    <div class="row g-4">
+
+      <!-- Your Same Cards (Unchanged) -->
+      <div class="col-md-3">
+        <div class="gallery-card">
+          <img src="https://i.pinimg.com/1200x/3b/be/15/3bbe159f4b39f65401949352fcc52345.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/1200x/0b/c2/7d/0bc27d267a12b45ef7ee9d1a904f46b0.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/49/0d/bd/490dbd4283a201d9f4700b22c5a4b5c2.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/fc/de/86/fcde86a7269820a7690a2a01b94a32a8.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/1200x/1a/83/06/1a83063b3800d0349842ff4d8dda562b.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/16/40/f8/1640f8a87da04be30457a63adde3dfca.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/a5/db/83/a5db832a15f1203bf584894807581f16.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/19/af/ef/19afefc15cb65f1eb83c0408dce40dbb.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/1200x/48/66/5d/48665d12d158debe2437d0a8c2cb76d8.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/28/9c/e1/289ce16bc9c3f152b379d7c04767d6f8.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/736x/24/5c/88/245c8803170a1299921474c777549eba.jpg">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="gallery-card"><img src="https://i.pinimg.com/1200x/4e/4f/97/4e4f97695823ae6e650fcd3326bc5e92.jpg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="lux-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand + Tagline -->
+        <div class="footer-section">
+          <img src="../Source/LUXORA.png" class="footer-logo" alt="Luxora Logo">
+          <p class="footer-desc">Elevating Homes with Elegant Interiors</p>
+        </div>
+
+        <!-- Explore Links -->
+        <div class="footer-section">
+          <h5 class="footer-title">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Extra_Files/Project.html">Projects</a></li>
+            <li><a href="../index.html#Reviews">Reviews</a></li>
+            <li><a href="../Extra_Files/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+          <h5 class="footer-title">Contact</h5>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️ luxorainteriors@gmail.com</p>
+          <p>📍 Hyderabad, Telangana</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-section">
+          <h5 class="footer-title">Follow Us</h5>
+          <a href="https://www.instagram.com" target="_blank" class="footer-social">
+            <i class="bi bi-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+      <p class="footer-copy text-center">© 2025 Luxora Interiors — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

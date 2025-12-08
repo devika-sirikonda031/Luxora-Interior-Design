@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Interiors</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- External CSS for all pages -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Source/LUXORA.png" alt="Luxora Logo" height="65" width="75">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="../index.html">Home</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex mx-auto search-container" onsubmit="return searchPage()">
+                    <input id="searchBox" class="form-control search-input" type="text" placeholder="Search...">
+                    <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+                </form>
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./Project.html"><i class="bi bi-grid"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact.html"><i class="bi bi-telephone-fill"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="container text-center pt-5 mt-5">
+        <p>Home > Kitchens > Cozy Style</p>
+        <h2 class="fw-bold text-secondary">Cozy Kitchens</h2>
+        <p class="text-muted">Simple, smart and beautifully designed kitchens for modern homes.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container mt-4 mb-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/70/ac/ba/70acba4820e9917a14be9cb2bad18c1d.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/5e/f6/07/5ef607b7801e32f3d06dd1ea9ec705c6.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/df/10/4c/df104c040780cafe86d0238a192cf617.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/14/90/55/149055d611a9b3f29fb3a5fdd4e996a8.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/a2/b0/78/a2b0789321a693143245fbc71ee684ba.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/3f/d4/d0/3fd4d03f218cc294ff313b480e129b70.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/1200x/fb/e7/e1/fbe7e1225ebc0c1ccb7b7558bc952c4c.jpg"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-card"><img
+                        src="https://i.pinimg.com/736x/8f/86/31/8f86310924969e453f06f14142c5c3e8.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="lux-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="../Source/LUXORA.png" class="footer-logo">
+                    <p class="footer-desc">Elevating Homes with Elegant Interiors</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./Project.html">Projects</a></li>
+                        <li><a href="../index.html#Reviews">Reviews</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Contact</h5>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️ luxorainteriors@gmail.com</p>
+                    <p>📍 Hyderabad, Telangana</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <a href="https://www.instagram.com" class="footer-social" target="_blank">
+                        <i class="bi bi-instagram"></i><span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy">© 2025 Luxora Interiors — All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>
