@@ -263,29 +263,8 @@ body {
   color: #c7a76c !important;
 }
 
-/* Default Light Mode */
-body {
-  background: #ffffff;
-}
 
-.navbar {
-  background: #ffffff !important;
-  border-bottom: 1px solid #ddd;
-}
 
-/* Dark Mode Activated */
-body.dark-mode {
-  background: #121212;
-}
 
-body.dark-mode .navbar {
-  background: #1e1e1e !important;
-}
-/* Dark Mode → Navbar text becomes white */
-body.dark-mode .navbar .nav-link,
-body.dark-mode .navbar-brand,
-body.dark-mode .navbar i {
-    color: #ffffff !important;
-}
 
 
