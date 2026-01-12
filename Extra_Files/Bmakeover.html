@@ -7,162 +7,57 @@
   <title>BedMakeover Interiors | Luxora Interiors</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../style.css">
 
 
   <style>
-    body {
-      background-color: #f9f9f9;
-    }
+   /* --- Your existing footer code ends here --- */
 
-    /* Search Bar Expand Animation */
-    .search-container {
-      flex-grow: 1;
-      justify-content: center;
-      /* border-radius: 15px; */
-    }
+/* Image Popup / Lightbox */
+.img-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
-    .search-input {
-      width: 230px;
-      max-width: 350px;
-      transition: width 0.4s ease-in-out;
-      border-radius: 15px;
-    }
+.popup-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 25px rgba(255,255,255,0.3);
+  animation: zoomIn 0.3s ease-in-out;
+}
 
-    .search-input:focus {
-      width: 550px;
-      max-width: 650px;
-    }
+@keyframes zoomIn {
+  from { transform: scale(0.6); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
 
-    .navbar-brand {
-      margin-right: 20px;
-    }
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  color: #ffb703;
+  transform: scale(1.2);
+}
 
-    .nav-link {
-      font-size: 18px;
-      margin-right: 20px;
-    }
+.gallery-card img, .card img {
+  cursor: zoom-in;
+}
 
-    /* Card Styling */
-    .gallery-card {
-      border: none;
-      overflow: hidden;
-      background: #fff;
-      transition: 0.3s ease;
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-    }
-
-    .gallery-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
-    }
-
-    .row {
-      --bs-gutter-x: 2rem !important;
-      --bs-gutter-y: 2rem !important;
-    }
-
-
-    /* Footer Layout */
-    .lux-footer {
-      background: #0c0c0c;
-      color: #eaeaea;
-      padding: 60px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 60px;
-    }
-
-    .footer-section {
-      min-height: 160px;
-    }
-
-    .footer-title {
-      font-size: 19px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-    }
-
-    .footer-section p,
-    .footer-links a {
-      font-size: 15px;
-      margin: 4px 0;
-      color: #dcdcdc;
-    }
-
-    .footer-links {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-links a {
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .footer-links a:hover {
-      color: #f5c542;
-      padding-left: 4px;
-    }
-
-    .footer-logo {
-      width: 130px;
-      margin-bottom: 12px;
-    }
-
-    .footer-social {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: #eaeaea;
-      font-size: 16px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .footer-social i {
-      font-size: 26px;
-      color: #f5c542;
-    }
-
-    .footer-social:hover {
-      color: #f5c542;
-      padding-left: 4px;
-    }
-
-    .footer-divider {
-      border-top: 1px solid #383838;
-      margin-top: 35px;
-      margin-bottom: 10px;
-    }
-
-    .footer-copy {
-      font-size: 14px;
-      color: #cccccc;
-    }
-
-    /* Responsive Layout */
-    @media (max-width: 768px) {
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 
@@ -337,6 +232,12 @@
       <p class="footer-copy text-center">© 2025 Luxora Interiors — All Rights Reserved</p>
     </div>
   </footer>
+  <!-- Full Screen Image Viewer -->
+<div id="imgPopup" class="img-popup">
+  <span class="close-btn">&times;</span>
+  <img class="popup-img" id="popupImage" alt="Preview">
+</div>
+
 
   <script src="../app.js"></script>
 </body>

@@ -1,65 +1,65 @@
 function searchPage() {
-    const input = document.getElementById("searchBox").value.toLowerCase().trim();
+  const input = document.getElementById("searchBox").value.toLowerCase().trim();
 
-    // Check if current page is inside Extra_Files folder
-    const isInsideExtra = window.location.pathname.toLowerCase().includes("extra_files");
+  // Check if current page is inside Extra_Files folder
+  const isInsideExtra = window.location.pathname.toLowerCase().includes("extra_files");
 
-    // Dynamic base path depending on page location
-    const basePath = isInsideExtra ? "./" : "./Extra_Files/";
+  // Dynamic base path depending on page location
+  const basePath = isInsideExtra ? "./" : "./Extra_Files/";
 
-    const pages = {
-        // Living Rooms
-        "modern": "modern.html",
-        "modern living": "modern.html",
-        "living room": "modern.html",
-        "stylish living room": "modern.html",
+  const pages = {
+    // Living Rooms
+    "modern": "modern.html",
+    "modern living": "modern.html",
+    "living room": "modern.html",
+    "stylish living room": "modern.html",
 
-        "cozy": "Lclozy.html",
-        "cozy living": "Lclozy.html",
+    "cozy": "Lclozy.html",
+    "cozy living": "Lclozy.html",
 
-        "minimal": "Lminimal.html",
-        "minimal living": "Lminimal.html",
+    "minimal": "Lminimal.html",
+    "minimal living": "Lminimal.html",
 
-        "luxury": "Lluxury.html",
-        "luxury living": "Lluxury.html",
+    "luxury": "Lluxury.html",
+    "luxury living": "Lluxury.html",
 
-        // Kitchen & Dining
-        "kitchen": "kitchen.html",
-        "modern kitchen": "KModern.html",
-        "white modular kitchen": "WKmodular.html",
+    // Kitchen & Dining
+    "kitchen": "kitchen.html",
+    "modern kitchen": "KModern.html",
+    "white modular kitchen": "WKmodular.html",
 
-        "dining": "Dcozy.html",
-        "cozy dining": "Dcozy.html",
+    "dining": "Dcozy.html",
+    "cozy dining": "Dcozy.html",
 
-        // Bedrooms
-        "minimal bedroom": "Bminimal.html",
-        "luxury bedroom": "Lbedroom.html",
-        "bedroom makeover": "Bmakeover.html",
+    // Bedrooms
+    "minimal bedroom": "Bminimal.html",
+    "luxury bedroom": "Lbedroom.html",
+    "bedroom makeover": "Bmakeover.html",
 
-        // Other Designs
-        "rustic": "Rustic.html",
-        "elegant": "Elegant.html",
+    // Other Designs
+    "rustic": "Rustic.html",
+    "elegant": "Elegant.html",
 
-        // kids design
-        "kids" : "kids.html",
-        "kids Bedroom" :"kids.html"
-      
-    };
+    // kids design
+    "kids": "kids.html",
+    "kids Bedroom": "kids.html"
 
-    if (pages[input]) {
-        window.location.href = basePath + pages[input];
-    } else {
-        alert("No results found! Try: Modern, Cozy, Kitchen, Bedroom, Rustic, Elegant…");
-    }
+  };
 
-    return false;
+  if (pages[input]) {
+    window.location.href = basePath + pages[input];
+  } else {
+    alert("No results found! Try: Modern, Cozy, Kitchen, Bedroom, Rustic, Elegant…");
+  }
+
+  return false;
 }
 
 
 
 
 //project
-  
+
 // const container = document.getElementById("baContainer");
 // const after = document.getElementById("baAfterWrapper");
 // const handle = document.getElementById("baHandle");
@@ -103,7 +103,7 @@ const projectData = {
   dining: {
     before:
       "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
-    
+
     after:
       "https://images.pexels.com/photos/6284237/pexels-photo-6284237.jpeg",
     mini1Title: "Family Dining Upgrade",
@@ -124,9 +124,9 @@ const projectData = {
   kitchen: {
     before:
 
-       "https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg",
+      "https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg",
     after:
-          "https://images.pexels.com/photos/4469151/pexels-photo-4469151.jpeg",
+      "https://images.pexels.com/photos/4469151/pexels-photo-4469151.jpeg",
     mini1Title: "Compact City Kitchen",
     mini1Text: "Old parallel kitchen redesigned with glossy shutters.",
     mini2Title: "Smart Storage",
@@ -235,6 +235,50 @@ if (baContainer && baOverlay && baHandle && baBefore && baAfter) {
 }
 
 
+// Contact Form Submission
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Stop page reload
+
+  // Show success message
+  document.getElementById("formSuccess").style.display = "block";
+
+  // Clear form
+  document.getElementById("contactForm").reset();
+
+  // Hide success message after 3 seconds
+  setTimeout(() => {
+    document.getElementById("formSuccess").style.display = "none";
+  }, 3000);
+});
+// Full Screen Image Zoom Popup
+const popup = document.getElementById("imgPopup");
+const popupImg = document.getElementById("popupImage");
+const closeBtn = document.querySelector(".close-btn");
+
+// Add click to all gallery / card images
+document.querySelectorAll(".gallery-card img, .card img").forEach(img => {
+  img.addEventListener("click", () => {
+    popup.style.display = "flex";
+    popupImg.src = img.src;
+  });
+});
+
+// Close popup when clicking X
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Close popup when clicking outside image
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) popup.style.display = "none";
+});
 
 
-  
+
+
+
+
+
+
+
+
