@@ -2,7 +2,9 @@
 
 ## 📌 Overview
 
-Luxora is a modern and responsive interior design website that showcases elegant home décor ideas, furniture collections, and stylish layouts. It provides users with a smooth browsing experience to explore different interior styles and inspirations.
+Luxora is a modern and responsive interior design website  
+that showcases elegant home décor ideas, furniture collections,  
+and stylish layouts.
 ---
 ## 🎯 Purpose
 This project is designed to showcase modern interior design ideas and improve frontend development skills by building a real-world responsive website.
