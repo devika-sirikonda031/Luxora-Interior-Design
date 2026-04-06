@@ -3,17 +3,20 @@
 ## 📌 Overview
 
 Luxora is a modern and responsive interior design website that showcases elegant home décor ideas, furniture collections, and stylish layouts. It provides users with a smooth browsing experience to explore different interior styles and inspirations.
+---
+## 🎯 Purpose
+This project is designed to showcase modern interior design ideas and improve frontend development skills by building a real-world responsive website.
 
 ---
 
 ## 🚀 Features
-
-* 🏠 Attractive homepage with modern UI
-* 🛋️ Interior design categories (Living Room, Bedroom, Kitchen, etc.)
-* 🖼️ Image gallery showcasing designs
-* 📄 Detailed pages for each design/service
-* 📱 Fully responsive design
-* 📞 Contact form for user inquiries
+- 🏠 Modern and clean homepage UI
+- 🛋️ Categorized interior designs (Living Room, Bedroom, Kitchen, etc.)
+- 🖼️ High-quality image gallery
+- 📄 Detailed project pages
+- 📱 Fully responsive design for all devices
+- 📞 Contact form with user input fields
+- 🔍 Search functionality for designs
 
 ---
 
@@ -24,6 +27,9 @@ Luxora is a modern and responsive interior design website that showcases elegant
 * **Tools:** Git, GitHub, VS Code
 
 ---
+## 📊 Project Level
+- Beginner to Intermediate Frontend Project
+- ----
 
 ## 📂 Project Structure
 
@@ -75,7 +81,7 @@ https://github.com/devika-sirikonda031/Luxora-Interior-Design
 2. Navigate to project folder
 
 ```bash
-cd luxora-interior-website
+cd Luxora-Interior-Design
 ```
 
 3. Run the project
@@ -97,6 +103,9 @@ https://devika-sirikonda031.github.io/Luxora-Interior-Design/index.html
 * 📊 Admin dashboard
 
 ---
+## ⭐ Acknowledgement
+This project was built as part of my frontend development learning journey.
+----
 
 ## 🙌 Author
 
